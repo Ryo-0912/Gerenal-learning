@@ -12,6 +12,7 @@ STG環境など、一時的な環境を作るような場合、わざわざDNS�
 sudo nano /etc/hosts
 ```
 
-![Uploading スクリーンショット 2024-01-18 12.49.18.png…]()
+<img width="562" alt="スクリーンショット 2024-01-18 12 49 18" src="https://github.com/Ryo-0912/Gerenal-learning/assets/82032550/322c11f6-6352-4789-b9fd-341e7109df52">
+
 
 Control + x、yで保存終了
