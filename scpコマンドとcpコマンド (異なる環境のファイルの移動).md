@@ -1,6 +1,8 @@
 キーワード : 踏み台サーバ、秘密鍵、鍵
 
-**scpコマンド**はローカルからリモートへファイルを渡したい(移動したい)時に使う。
+# scpコマンド
+
+ローカルからリモートへファイルを渡したい(移動したい)時に使う。
 
 ```
 andouryou@andouryounoMacBook-Pro ~ % scp -i ~/.ssh/sample_key /Users/氏名/bridge-d540d-c8e276592470.json sample-user@34.84.252.27:/home/sample.development
@@ -20,11 +22,13 @@ scp -i ~/.ssh/sample_key /Users/andouryou/bridge-d540d-c8e276592470.json sample-
 
 リモートの`sample.development/usr` ディレクトリ配下に移動させる
 
-**cpコマンド**はある環境にファイルを、同じ環境にある別のファイルにコピーしたい時に実行する。(ローカルからローカルへ or リモートからリモートへ)
+# cpコマンド
+
+ある環境にファイルを、同じ環境にある別のファイルにコピーしたい時に実行する。(ローカルからローカルへ or リモートからリモートへ)
 
 ```
 sample-user@sample-staging:~$ ls
-**bridge-d540d-c8e276592470.json**
+bridge-d540d-c8e276592470.json
 
 sample-user@sample-staging:~$ sudo cp bridge-d540d-c8e276592470.json /
 ここでbridge-d540d-c8e276592470.jsonファイルを/(ルートディレクトリ)配下にコピーしている
