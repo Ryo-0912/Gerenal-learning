@@ -36,19 +36,20 @@ ls -la [対象ファイル]
 sudo chown ユーザ名:ユーザ名 [ファイル名]
 ```
 
-1. **パーミッションの設定**:
-    - **`.ssh`** ディレクトリと **`authorized_keys`** ファイルのパーミッションを適切に設定します。
+パーミッションの設定
+**`.ssh`** ディレクトリと **`authorized_keys`** ファイルのパーミッションを設定。
         
-        ```bash
-        chmod 700 ~/.ssh
-        chmod 600 ~/.ssh/authorized_keys
-        ```
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
         
-2. **SSH設定の確認**:
-    - **`sshd_config`** ファイルでパスワード認証を無効にしているか確認します。**`PasswordAuthentication`** の値が **`no`** に設定されていることを確認してください。
-3. **SSHデーモンの再起動**:
-    - SSHデーモンを再起動して変更を反映させます。
-        
-        ```
-        sudo systemctl restart sshd
-        ```
+SSH設定の確認
+**`sshd_config`** ファイルでパスワード認証を無効にしているか確認。**`PasswordAuthentication`** の値が **`no`** に設定されていることを確認。
+
+SSHデーモンの再起動
+SSHデーモンを再起動して変更を反映させる。
+
+```
+sudo systemctl restart sshd
+```
