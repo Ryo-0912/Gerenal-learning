@@ -53,3 +53,23 @@ SSHデーモンを再起動して変更を反映させる。
 ```
 sudo systemctl restart sshd
 ```
+
+sudo suなど実行時にパスワードを要求される時に、要求されないようにするには
+以下のコマンドで、エディタを開き、
+```
+sudo visudo
+```
+
+開いたエディタの以下の箇所を次のように変更する。
+
+変更前
+```
+## Allows people in group wheel to run all commands
+%wheel  ALL=(ALL)       ALL
+```
+
+変更後
+```
+## Allows people in group wheel to run all commands
+%wheel  ALL=(ALL)	NOPASSWD: ALL
+```
